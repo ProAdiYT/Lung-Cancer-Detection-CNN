@@ -1,43 +1,46 @@
-Lung Cancer Detection using CNN
+# Lung Cancer Detection using CNN
 
-Author: Aditya Bhadauria
+## Author
+**Aditya Bhadauria**
 
-Project Overview
+---
 
-This project implements a deep learning system to detect lung cancer from CT scan images using a Convolutional Neural Network (CNN). The model classifies CT scan images into four categories: Adenocarcinoma, Large Cell Carcinoma, Squamous Cell Carcinoma, and Normal.
+## Project Overview
+This project implements a deep learning model to detect **lung cancer from CT scan images** using a **Convolutional Neural Network (CNN)**.  
 
-A Streamlit web interface is included so users can upload a CT image and receive an instant prediction.
+The system analyzes CT scan images and classifies them into different categories of lung cancer.
 
-Dataset
+A **Streamlit web application** is also included so users can upload CT scan images and get predictions instantly.
 
-Dataset used: Chest CT-Scan Images Dataset
+---
 
-Source:
+## Dataset
+
+Dataset used: **Chest CT-Scan Images Dataset**
+
+Dataset Link:  
 https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
 
-Classes:
+The dataset contains CT scan images categorized into four classes:
 
-Adenocarcinoma
+- Adenocarcinoma  
+- Large Cell Carcinoma  
+- Squamous Cell Carcinoma  
+- Normal  
 
-Large Cell Carcinoma
+---
 
-Squamous Cell Carcinoma
+## Technologies Used
 
-Normal
+- Python  
+- TensorFlow / Keras  
+- OpenCV  
+- NumPy  
+- Streamlit  
 
-Technologies Used
+---
 
-Python
-
-TensorFlow / Keras
-
-OpenCV
-
-NumPy
-
-Streamlit
-
-Project Structure
+## Project Structure
 Lung-Cancer-Detection-CNN
 │
 ├── app.py
@@ -46,51 +49,84 @@ Lung-Cancer-Detection-CNN
 ├── data_loader.py
 ├── requirements.txt
 ├── README.md
-├── dataset/
-└── model/
-Installation (Step-by-Step for Beginners)
-1. Clone the repository
+│
+├── dataset
+│
+└── model
+└── lung_cancer_model.h5
+
+---
+
+## Installation (Beginner Friendly)
+
+### 1. Clone the Repository
 git clone https://github.com/ProAdiYT/Lung-Cancer-Detection-CNN.git
-2. Go to the project folder
+
+
+### 2. Go to Project Folder
 cd Lung-Cancer-Detection-CNN
-3. Install required libraries
+
+
+### 3. Install Required Libraries
 pip install -r requirements.txt
-Training the Model
 
-Run the following command to preprocess the dataset:
 
+---
+
+## Training the Model
+
+First preprocess the dataset:
 python data_loader.py
 
-Then train the CNN model:
 
+Then train the CNN model:
 python train_model.py
 
-After training completes, the trained model file will be created inside the model folder.
 
-Running the Prediction Script
+After training completes, the trained model file will be saved in the **model** folder.
 
-To test prediction on a sample CT scan image:
+---
 
+## Running Prediction Script
+
+To test prediction using a sample CT scan image:
 python predict.py
 
-The program will output the predicted cancer type.
 
-Running the Streamlit Web Application
+The program will output the predicted lung condition.
 
-Start the web interface with:
+---
 
+## Running the Streamlit Web Application
+
+Start the Streamlit app:
 streamlit run app.py
 
-After running the command, open the browser at:
 
+After running the command, open the browser at:
 http://localhost:8501
 
-Upload a CT scan image and the system will predict the lung condition.
 
-Results
+Upload a CT scan image and the system will predict the lung cancer type.
 
-The CNN model achieved approximately 95–99% accuracy on the validation dataset.
+---
 
-Live Demo
+## Results
 
-(Add your Streamlit Cloud deployment link here once the app is deployed.)
+The CNN model achieved approximately **95–99% accuracy** on the validation dataset.
+
+---
+
+## Live Demo
+
+(Add your Streamlit deployment link here after deploying)
+
+Example:
+https://lung-cancer-detection-cnn.streamlit.app
+
+
+---
+
+## Conclusion
+
+This project demonstrates how **deep learning and CNN models can be applied to medical image analysis** for early detection of lung cancer using CT scan images.
