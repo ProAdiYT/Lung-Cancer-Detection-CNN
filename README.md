@@ -1,56 +1,96 @@
-# Lung Cancer Detection using CNN
+Lung Cancer Detection using CNN
 
-## Author
-Aditya Bhadauria
+Author: Aditya Bhadauria
 
-## Project Description
-This project detects lung cancer from CT scan images using a Convolutional Neural Network (CNN). The model analyzes CT scan images and classifies them into different categories of lung cancer.
+Project Overview
 
-## Dataset
+This project implements a deep learning system to detect lung cancer from CT scan images using a Convolutional Neural Network (CNN). The model classifies CT scan images into four categories: Adenocarcinoma, Large Cell Carcinoma, Squamous Cell Carcinoma, and Normal.
 
-The model was trained using the **Chest CT-Scan Images Dataset** available on Kaggle.
+A Streamlit web interface is included so users can upload a CT image and receive an instant prediction.
 
-Dataset link:  
+Dataset
+
+Dataset used: Chest CT-Scan Images Dataset
+
+Source:
 https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
 
-The dataset contains CT scan images categorized into four classes:
+Classes:
 
-- Adenocarcinoma
-- Large Cell Carcinoma
-- Squamous Cell Carcinoma
-- Normal
+Adenocarcinoma
 
-The dataset is organized into training, validation, and testing folders.
-Images were resized to 128×128 pixels before training the CNN model.
+Large Cell Carcinoma
 
-## Technologies Used
-- Python
-- TensorFlow / Keras
-- OpenCV
-- NumPy
-- Streamlit
+Squamous Cell Carcinoma
 
-## Methodology
-1. CT scan images are collected from the dataset.
-2. Images are resized to 128x128 pixels.
-3. Data preprocessing is done using NumPy and OpenCV.
-4. A Convolutional Neural Network (CNN) is built using TensorFlow/Keras.
-5. The model is trained on CT scan images.
-6. The trained model predicts lung cancer type.
-7. A Streamlit web app allows users to upload CT images and get predictions.
+Normal
 
-## Results
-The CNN model achieved around **95–99% accuracy** on the validation dataset.
+Technologies Used
 
-## How to Run
+Python
 
-Install dependencies:
+TensorFlow / Keras
 
+OpenCV
+
+NumPy
+
+Streamlit
+
+Project Structure
+Lung-Cancer-Detection-CNN
+│
+├── app.py
+├── predict.py
+├── train_model.py
+├── data_loader.py
+├── requirements.txt
+├── README.md
+├── dataset/
+└── model/
+Installation (Step-by-Step for Beginners)
+1. Clone the repository
+git clone https://github.com/ProAdiYT/Lung-Cancer-Detection-CNN.git
+2. Go to the project folder
+cd Lung-Cancer-Detection-CNN
+3. Install required libraries
 pip install -r requirements.txt
+Training the Model
 
-Run the application:
+Run the following command to preprocess the dataset:
+
+python data_loader.py
+
+Then train the CNN model:
+
+python train_model.py
+
+After training completes, the trained model file will be created inside the model folder.
+
+Running the Prediction Script
+
+To test prediction on a sample CT scan image:
+
+python predict.py
+
+The program will output the predicted cancer type.
+
+Running the Streamlit Web Application
+
+Start the web interface with:
 
 streamlit run app.py
 
-## Live Application
-(Add your Streamlit deployment link here after deployment)
+After running the command, open the browser at:
+
+http://localhost:8501
+
+Upload a CT scan image and the system will predict the lung condition.
+
+Results
+
+The CNN model achieved approximately 95–99% accuracy on the validation dataset.
+
+Live Demo
+
+(Add your Streamlit Cloud deployment link here once the app is deployed.)
