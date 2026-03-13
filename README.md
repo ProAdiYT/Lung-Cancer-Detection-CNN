@@ -64,24 +64,28 @@ git clone https://github.com/ProAdiYT/Lung-Cancer-Detection-CNN.git
 ```
 
 ### 2. Go to Project Folder
+```
 cd Lung-Cancer-Detection-CNN
-
+```
 
 ### 3. Install Required Libraries
+```
 pip install -r requirements.txt
-
+```
 
 ---
 
 ## Training the Model
 
 First preprocess the dataset:
+```
 python data_loader.py
-
+```
 
 Then train the CNN model:
+```
 python train_model.py
-
+```
 
 After training completes, the trained model file will be saved in the **model** folder.
 
@@ -90,8 +94,9 @@ After training completes, the trained model file will be saved in the **model** 
 ## Running Prediction Script
 
 To test prediction using a sample CT scan image:
+```
 python predict.py
-
+```
 
 The program will output the predicted lung condition.
 
@@ -100,14 +105,15 @@ The program will output the predicted lung condition.
 ## Running the Streamlit Web Application
 
 Start the Streamlit app:
-
+```
 streamlit run app.py
          or
 python -m streamlit run app.py
-
+```
 After running the command, open the browser at:
-http://localhost:8501
-
+```
+http://localhost:
+```
 
 Upload a CT scan image and the system will predict the lung cancer type.
 
