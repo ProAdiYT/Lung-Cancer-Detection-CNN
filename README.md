@@ -107,7 +107,9 @@ The program will output the predicted lung condition.
 Start the Streamlit app:
 ```
 streamlit run app.py
+```
          or
+```
 python -m streamlit run app.py
 ```
 After running the command, open the browser at:
