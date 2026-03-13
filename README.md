@@ -100,8 +100,10 @@ The program will output the predicted lung condition.
 ## Running the Streamlit Web Application
 
 Start the Streamlit app:
-streamlit run app.py
 
+streamlit run app.py
+         or
+python -m streamlit run app.py
 
 After running the command, open the browser at:
 http://localhost:8501
