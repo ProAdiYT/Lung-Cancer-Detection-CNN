@@ -59,8 +59,9 @@ Lung-Cancer-Detection-CNN
 ## Installation (Beginner Friendly)
 
 ### 1. Clone the Repository
+```
 git clone https://github.com/ProAdiYT/Lung-Cancer-Detection-CNN.git
-
+```
 
 ### 2. Go to Project Folder
 cd Lung-Cancer-Detection-CNN
