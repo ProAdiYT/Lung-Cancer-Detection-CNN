@@ -38,9 +38,9 @@ The dataset contains CT scan images categorized into four classes:
 - NumPy  
 - Streamlit  
 
----
-
 ## Project Structure
+
+```
 Lung-Cancer-Detection-CNN
 │
 ├── app.py
@@ -53,9 +53,8 @@ Lung-Cancer-Detection-CNN
 ├── dataset
 │
 └── model
-└── lung_cancer_model.h5
-
----
+    └── lung_cancer_model.h5
+```
 
 ## Installation (Beginner Friendly)
 
