@@ -30,7 +30,7 @@ The dataset contains CT scan images categorized into four classes:
 
 ---
 
-## Technologies Used
+## Technologies Used :
 
 - Python  
 - TensorFlow / Keras  
